@@ -1,0 +1,4 @@
+\.pyc$
+\.pyo$
+^\.idea/
+^settings_local\.py$

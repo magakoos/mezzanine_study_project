@@ -1,0 +1,11 @@
+<h1>{{ article.header }}</h1>
+<p>{{ article.authors }}</p>
+<p>{{ article.create_date }}</p>
+<p>
+{% for tag in article.tags.values %}
+<b>{{ tag.name }}</b>&nbsp;
+{% endfor %}
+</p>
+<p>{{ article.body }}</p>
+<p>{{ article.change_date }}</p>
+
