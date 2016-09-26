@@ -21,13 +21,6 @@ DATABASES = {
     }
 }
 
-ADMIN_MENU_ORDER = (
-    ("Content", ("pages.Page", "blog.BlogPost",
-       "generic.ThreadedComment", (_("Media Library"), "media-library"),)),
-    ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
-    ("Users", ("auth.User", "auth.Group",)),
-)
-
 try:
     from mezzanine.utils.conf import set_dynamic_settings
 except ImportError:
